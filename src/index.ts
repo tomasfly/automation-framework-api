@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.get("/", (req, res) => {
-    res.send("<html> hello world! </html>")
+    console.info(`incoming request`)
+    res.send("<html><h1>Welcome to SQ API</h1> </html>")
 })
 
 app.listen(port, function () {
